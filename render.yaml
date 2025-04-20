@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: invitecashbot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "bash start.sh"
+    envVars:
+      - key: BOT_TOKEN
+        value: 7620294360:AAHfB9mmUwAl3l7F9R48eChgbNASKo48_Fw
+      - key: ADMIN_ID
+        value: 6876055640
+      - key: TON_WALLET
+        value: UQDItrCA8-8bmtFY3p3EPVVoMQEIPqvCP4Rf2tTiT_7GqhUg
+      - key: USDT_WALLET
+        value: TTv93u9RfvMv4d3K3XeLPsvsGyPtdJ3iwf
